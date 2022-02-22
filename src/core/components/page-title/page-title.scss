@@ -1,0 +1,13 @@
+.page-title {
+  background-image: linear-gradient(to bottom, #f1ffff, #dbf5ff);
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+  .page-title {
+    flex-wrap: nowrap;
+  }
+}

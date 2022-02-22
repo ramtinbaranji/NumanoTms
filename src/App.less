@@ -1,0 +1,123 @@
+@dk-font: IRANYekan, Poppins, sans-serif;
+
+body {
+  margin: 0;
+  font-family: @dk-font !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ltr {
+  direction: ltr;
+  text-align: left !important;
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: @dk-font !important;
+}
+
+.brand-font {
+  font-family: @dk-font !important;
+}
+
+.card-header .user {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.page-header {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.user-name {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: #388e3c !important;
+}
+
+.MuiTableCell-root,
+.MuiTypography-body2 {
+  font-family: @dk-font !important;
+}
+
+.error {
+  background: #f37a8a85 !important;
+  padding: 2% !important;
+}
+
+.MuiDialogActions-spacing > :not(:first-child) {
+  margin: 8px;
+}
+
+#ms-belltown-table {
+  padding-bottom: 0 !important;
+}
+
+// hide sharepoint footer
+table.ms-core-tableNoSpace > tbody > tr:last-child,
+table.ms-core-tableNoSpace > tbody > tr:last-child > td {
+  display: none !important;
+  line-height: 0 !important;
+}
+
+// Toastify
+
+.Toastify__toast {
+  border-radius: 3px 3px 3px 3px !important;
+  font-family: @dk-font !important;
+  // background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR…ftP4P7SP4N3CJZdvzoNyGq2c/HWOXJGsvVg+RA/k2MC/wN6I2YA2Pt8GkAAAAASUVORK5CYII=) !important;
+}
+
+.Toastify__close-button {
+  align-self: auto !important;
+  text-align: end;
+  padding-left: 10px;
+}
+
+.Toastify__close-button:active,
+.Toastify__close-button:hover {
+  background-color: transparent !important;
+}
+
+.Toastify__toast--rtl .Toastify__toast-body {
+  text-align: right !important;
+}

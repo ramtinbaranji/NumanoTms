@@ -1,0 +1,17 @@
+.MuiDialogTitle-root {
+  border-bottom: 1px solid #ebedf2;
+  min-height: 60px;
+}
+
+.MuiDialogActions-root {
+  border-top: 1px solid #ebedf2;
+}
+
+.modal-body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.MuiPaper-rounded {
+  border-radius: 1.25rem !important;
+}

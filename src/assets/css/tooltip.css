@@ -1,0 +1,70 @@
+/* 
+ data-balloon-pos       : up, down, left, right, up-left, up-right, down-left or down-right
+ data-balloon-break     : for long text
+ data-balloon-length    : small, medium, large, xlarge or fit 
+ data-balloon-nofocus   : for off trigger in focus mode
+ data-balloon-blunt     : Disabling animation
+ --balloon-move         : 
+ */
+
+[aria-label][data-balloon-pos]:after {
+  font-family: IRANYekanFarsi, Poppins, sans-serif !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+[aria-label][data-balloon-pos]:before {
+  font-family: IRANYekanFarsi, Poppins, sans-serif !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+/* Transition effect */
+.tooltip-move {
+  --balloon-move: 10px;
+}
+/* Text size */
+.tooltip-text-xsm {
+  --balloon-font-size: 8px;
+}
+.tooltip-text-sm {
+  --balloon-font-size: 10px;
+}
+.tooltip-text-md {
+  --balloon-font-size: 13px;
+}
+.tooltip-text-lg {
+  --balloon-font-size: 16px;
+}
+.tooltip-text-xlg {
+  --balloon-font-size: 20px;
+}
+/* Theme */
+.tooltip-white {
+  --balloon-color: #fff;
+  --balloon-text-color: #3f4254;
+}
+.tooltip-light {
+  --balloon-color: #f3f6f9;
+  --balloon-text-color: #3f4254;
+}
+.tooltip-dark {
+  --balloon-color: black;
+}
+.tooltip-warning {
+  --balloon-color: #ffa800;
+}
+.tooltip-info {
+  --balloon-color: #8950fc;
+}
+.tooltip-danger {
+  --balloon-color: #ef3e56;
+}
+.tooltip-success {
+  --balloon-color: #64cad9;
+}
+.tooltip-primary {
+  --balloon-color: #b11c48;
+}
+.tooltip-secondary {
+  --balloon-color: #e4e6ef;
+  --balloon-text-color: #3f4254;
+}

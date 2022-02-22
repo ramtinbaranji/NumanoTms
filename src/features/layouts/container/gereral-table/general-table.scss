@@ -1,0 +1,53 @@
+.general-table-container {
+  height: 100%;
+  border-radius: 1.25rem !important;
+  border: 1px dashed var(--border) !important;
+  padding: 0 1rem 1rem;
+  height: 100%;
+
+  &__table-header {
+    border-bottom: 1px solid var(--light-border);
+  }
+  &__table-row {
+    border-bottom: 1px dashed var(--border);
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+.thead {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 2px 51.7px 28px 24.1px !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 1.78 !important;
+  letter-spacing: normal !important;
+  color: var(--dark) !important;
+}
+.active {
+  font-size: 1rem;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 1.78 !important;
+  letter-spacing: normal !important;
+  color: var(--dark) !important;
+  svg {
+    fill: var(--primary) !important;
+  }
+}
+.deactive {
+  font-size: 1rem;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 1.78 !important;
+  letter-spacing: normal !important;
+  color: var(--gray) !important;
+  svg {
+    fill: var(--gray) !important;
+  }
+}

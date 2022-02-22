@@ -1,0 +1,83 @@
+@import "assets/css/dk-brand.less";
+@import "assets/css/style.bundle.css";
+@import "assets/css/tooltip.css";
+@import "assets/css/sp.responsive.css";
+
+html,
+body {
+  width: 100%;
+  overflow-y: auto;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh !important; */
+}
+
+#titlerow {
+  display: none;
+}
+
+#pageContentTitle {
+  display: none !important;
+}
+
+#contentBox {
+  padding: 0 !important;
+}
+
+.ms-webpartzone-cell {
+  margin: 0 !important;
+}
+.text-end {
+  text-align-last: end;
+}
+.font-large {
+  font-size: large;
+}
+
+.font-family-iranyekan {
+  font-family: IRANYekanFarsi !important;
+}
+#suiteBarTop {
+  display: none !important;
+}
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  border-radius: 7px !important;
+}
+#s4-workspace {
+  background-color: var(--bg) !important;
+}
+#s4-workspace > tbody #root {
+  min-height: 100vh;
+}
+.bg-blue-dark {
+  background-color: var(--blue-dark);
+}
+.bg-green-dark {
+  background-color: var(--green-dark);
+}
+.bg-card-cream {
+  background-color: #fefcf9 !important;
+}
+.text-green-dark {
+  color: var(--green-dark);
+}
+.bg-light-green {
+  background-color: rgba(12, 188, 139, 0.1);
+}
+.bg-light-red {
+  background-color: rgba(169, 48, 146, 0.06) !important;
+}
+
+@media (min-width: 1400px) {
+  #root {
+    height: 100%;
+    min-height: 100vh !important;
+  }
+}

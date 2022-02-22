@@ -1,0 +1,49 @@
+#contentBox,
+.contentwrapper {
+  min-width: auto;
+}
+
+.ms-webpart-chrome-vertical,
+.ms-table,
+.ms-tableRow,
+.ms-tableCell,
+.ms-webpart-zone,
+div.ms-webpart-cell-vertical-inline-table,
+.ms-core-tableNoSpace.ms-webpartPage-root,
+.ms-core-tableNoSpace.ms-webpartPage-root table:not(.MuiTable-root, .dx-g-bs4-table, .dk-table),
+.ms-core-tableNoSpace.ms-webpartPage-root tbody:not(.MuiTableBody-root, .dx-g-bs4-table tbody, .dk-table-body),
+.ms-core-tableNoSpace.ms-webpartPage-root
+  tr:not(.MuiTableRow-root, .dk-table-row, .dx-g-bs4-table > thead > tr, .dx-g-bs4-table > tbody > tr),
+.ms-core-tableNoSpace.ms-webpartPage-root
+  td:not(.dk-table-column, .MuiTableCell-root, .dx-g-bs4-table > tbody > tr > td) {
+  display: block;
+}
+
+/* div[class^="ms"] table:not(.dk-table),
+div[class^="ms"] tbody:not(.dk-table-body),
+div[class^="ms"] tr:not(.dk-table-row),
+div[class^="ms"] td:not(.dk-table-column) {
+  display: block;
+} */
+.ms-dialog #s4-bodyContainer {
+  min-width: 0;
+}
+
+table#layoutsTable > tbody > tr > td {
+  width: auto !important;
+  padding: 0;
+}
+
+table.ms-listviewtable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+div#s4-bodyContainer {
+  width: auto !important;
+}
+
+.ms-pub-contentLayout {
+  display: contents;
+  min-width: auto;
+}
