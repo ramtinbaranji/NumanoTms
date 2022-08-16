@@ -1,7 +1,7 @@
 import * as React from "react";
 import { ReactElement } from "react";
 import { useTranslation } from "react-i18next";
-import DKSVGIcon from "src/core/components/svg-icon/svg-icon";
+import DKSVGIcon from "../../core/components/svg-icon/svg-icon";
 
 const Footer = (): ReactElement => {
   const { t } = useTranslation();

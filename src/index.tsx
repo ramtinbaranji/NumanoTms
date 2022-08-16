@@ -5,12 +5,12 @@ import "react-app-polyfill/ie9";
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
-import Log from "./services/logger/Log";
+// import Log from "./services/logger/Log";
 
-if (process.env.REACT_APP_NODE_ENV !== "production") {
-  localStorage.setItem("debug", "dkg-hris-cafeteria:*");
-  Log.info("Ready for debugging...");
-}
+// if (process.env.REACT_APP_NODE_ENV !== "production") {
+//   localStorage.setItem("debug", "dkg-hris-cafeteria:*");
+//   Log.info("Ready for debugging...");
+// }
 
 // config sentry
 if (process.env.REACT_APP_NODE_ENV === "production") {

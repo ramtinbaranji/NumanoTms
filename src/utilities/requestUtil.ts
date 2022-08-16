@@ -1,6 +1,4 @@
-import ApplicationRequest from "./../hooks/useService";
-
-export const flattenRequest = (request: ApplicationRequest | null): string => {
+export const flattenRequest = (request: any): string => {
   const dataJSON: any = {};
   if (request?.data) {
     request?.data.forEach((value: any, key: string) => {
