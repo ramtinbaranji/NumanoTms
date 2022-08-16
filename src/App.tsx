@@ -2,11 +2,11 @@ import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
 import React from "react";
 import { LocalizeProvider } from "react-localize-redux";
 import { HashRouter as Router } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+// import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.less";
-import { AppContextConsumer, Context } from "./AppContext";
-import { AppContextProvider } from "./AppContextProvider";
+// import { AppContextConsumer, Context } from "./AppContext";
+// import { AppContextProvider } from "./AppContextProvider";
 import "./assets/css/dk-brand.less";
 import AppContainer from "./features/layouts/container/container";
 
@@ -28,17 +28,17 @@ export default class APP extends React.Component<{}> {
 
   render(): JSX.Element {
     return (
-      <AppContextProvider>
-        <MuiThemeProvider theme={theme}>
-          <LocalizeProvider>
-            <Router>
-              <AppContainer></AppContainer>
-            </Router>
-          </LocalizeProvider>
-        </MuiThemeProvider>
-        <AppContextConsumer>{appContext => <ToastContainer rtl={true} newestOnTop={true} />}</AppContextConsumer>
-      </AppContextProvider>
+      // <AppContextProvider>
+      <MuiThemeProvider theme={theme}>
+        <LocalizeProvider>
+          <Router>
+            <AppContainer></AppContainer>
+          </Router>
+        </LocalizeProvider>
+      </MuiThemeProvider>
+      //   <AppContextConsumer>{appContext => <ToastContainer rtl={true} newestOnTop={true} />}</AppContextConsumer>
+      // </AppContextProvider>
     );
   }
 }
-APP.contextType = Context;
+// APP.contextType = Context;
